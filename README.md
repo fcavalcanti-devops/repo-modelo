@@ -23,4 +23,4 @@ Ativo na branch padrão.
 - Nenhum status check obrigatório. O CodeQL não bloqueia o merge.
 - Neste modelo, o admin pode gravar direto na branch padrão, para o Terraform atualizar estes arquivos. Nos repositórios copiados a partir daqui, essa exceção não existe.
 
-Ajuste a linguagem em `.github/workflows/codeql.yml` antes de exigir esse check.
+Neste modelo o CodeQL não roda, porque não há código-fonte. Nos repositórios copiados, ajuste a linguagem em `.github/workflows/codeql.yml` antes de exigir esse check.
