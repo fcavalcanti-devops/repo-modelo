@@ -11,6 +11,8 @@ on:
 jobs:
   analyze:
     name: Analyze
+    # O modelo não tem código-fonte. A análise só roda nos repositórios copiados a partir dele.
+    if: github.event.repository.name != 'repo-modelo'
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -26,7 +28,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
