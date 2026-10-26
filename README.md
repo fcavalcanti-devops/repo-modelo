@@ -10,7 +10,7 @@ Arquivos iniciais copiados quando um repositório novo é criado a partir deste 
 - Em repositório público, secret scanning e push protection ligados.
 - Alertas de vulnerabilidade e security updates do Dependabot ligados.
 
-## Ruleset `ruleset-main`
+## Ruleset `ruleset-default`
 
 Ativo na `main` e na `homolog`.
 
