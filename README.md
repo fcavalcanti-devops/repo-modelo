@@ -12,7 +12,7 @@ Arquivos iniciais copiados quando um repositório novo é criado a partir deste 
 
 ## Ruleset `ruleset-main`
 
-Ativo na branch padrão.
+Ativo na `main` e na `homolog`.
 
 - Não pode apagar a branch.
 - Não pode fazer force push.
@@ -21,6 +21,6 @@ Ativo na branch padrão.
 - Conversas do review precisam estar resolvidas.
 - Merge, squash e rebase liberados.
 - Nenhum status check obrigatório. O CodeQL não bloqueia o merge.
-- Neste modelo, o admin pode gravar direto na branch padrão, para o Terraform atualizar estes arquivos. Nos repositórios copiados a partir daqui, essa exceção não existe.
+- Neste modelo, o admin pode gravar direto nas branches do ruleset, para o Terraform atualizar estes arquivos na branch padrão. Nos repositórios copiados a partir daqui, essa exceção não existe.
 
 Neste modelo o CodeQL não roda, porque não há código-fonte. Nos repositórios copiados, ajuste a linguagem em `.github/workflows/codeql.yml` antes de exigir esse check.
